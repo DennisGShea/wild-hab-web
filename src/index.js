@@ -4,6 +4,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import WildHabEventForm from "./CreateEventForm/WildHabEventForm";
+// import App from "/.App"
 
 ReactDOM.render(
   <React.StrictMode>
