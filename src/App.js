@@ -14,7 +14,6 @@ import ListEvents from "./ListEvents"
 function App() {
   return (
     <Router>
-      <div>
         <nav>
           <ul>
             <li>
@@ -28,27 +27,16 @@ function App() {
             </li>
           </ul>
         </nav>
-
-        {/* A <Switch> looks through its children <Route>s and
-            renders the first one that matches the current URL. */}
         <Switch>
-          <Route path="/create-event">
+          <Route exact path="/create-event">
             <WildHabEventForm />
           </Route>
-          <Route path="/List-events">
+          <Route exact path="/list-events">
             <ListEvents/>
           </Route>
-          <Route path="/">
-            <Home />
-          </Route>
         </Switch>
-      </div>
     </Router>
   );
-}
-
-function Home() {
-  return <h2>Home</h2>;
 }
 
 export default App
